@@ -1,0 +1,25 @@
+/*==========
+Reset Style
+=========*/
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===========
+Varaibles List
+=========*/
+
+:root {
+    --brnd-col: #800080;
+    --header-bg: #fff;
+    --prime-bg: linen;
+    --scnd-bg: #fff;
+    --txt-col1: black;
+    --text-col2: grey;
+    --hover-col: #800080;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
