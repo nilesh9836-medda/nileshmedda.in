@@ -32,8 +32,8 @@ Varaibles List
     --header-bg: #fff;
     --prime-bg: #f4e6fa;
     --scnd-bg: #fff;
-    --txt-col1: black;
-    --text-col2: hsl(0, 0%, 35%);
+    --txt-col1: #000000;
+    --text-col2: #595959;
     --hover-col: #800080;
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -80,6 +80,7 @@ header.site-header {
     top: 0;
     right: 0;
     z-index: 500;
+    background-color: var(--header-bg);
 }
 
 .nav-menu > li {
@@ -113,10 +114,37 @@ header.site-header {
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.4s ease 0.1s;
+    z-index: 500;
 }
 
 .nav-menu > li:hover::after {
     width: 100%;
+}
+
+/*=========
+Hamburger
+=======*/
+
+.hamburger {
+    position: relative;
+    right: 1rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    background: transparent;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    background-color: var(--txt-col1);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
 }
 
 /*====
