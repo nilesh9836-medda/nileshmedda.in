@@ -153,13 +153,14 @@ Hamburger
     position: relative;
     right: 1rem;
     display: flex;
-    height: 100%;
+    height: 3rem;
+    width: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
     background: transparent;
-    padding: 0 1.5rem;
+    padding: 0;
     border: none;
     z-index: 1000;
     cursor: pointer;
@@ -170,11 +171,6 @@ Hamburger
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-}
-
-.hamburger.active {
-    position: absolute;
-    top: -47%;
 }
 
 .hamburger.active .bar {
