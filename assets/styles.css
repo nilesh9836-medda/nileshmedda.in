@@ -39,6 +39,24 @@ Varaibles List
     --font-body: 'Inter', sans-serif;
 }
 
+
+/*=============
+Overlay screen
+============*/
+
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 400;
+    background: transparent;
+}
+
 /*======
 Header
 =====*/
@@ -76,14 +94,18 @@ header.site-header {
     gap: 50px;
     position: absolute;
     height: 100vh;
-    width: 80%;
+    width: 0;
     top: 0;
-    right: 0;
+    right: -100%;
     z-index: 500;
     background-color: var(--header-bg);
 }
 
-.nav-menu > li {
+.nav-list {
+    position: relative;
+}
+
+.nav-link {
     position: relative;
     color: var(--text-col2);
     padding: 0.5rem 1rem;
@@ -94,17 +116,12 @@ header.site-header {
     transition-delay: 0.1s;
 }
 
-.nav-link {
-    color: inherit;
-    position: relative;
-}
-
-.nav-menu > li:hover {
+.nav-link:hover, .nav-link.active {
     color: var(--brnd-col);
     transform: scale(1.08);
 }
 
-.nav-menu > li::after {
+.nav-link::after {
     position: absolute;
     content: '';
     width: 0;
@@ -117,9 +134,16 @@ header.site-header {
     z-index: 500;
 }
 
-.nav-menu > li:hover::after {
+.nav-link:hover::after, .nav-link.active::after {
     width: 100%;
 }
+
+.nav-menu.active {
+    width: 80%;
+    right: 0;
+    box-shadow: -30px 0 90px rgba(0,0,0,0.4);
+}
+
 
 /*=========
 Hamburger
@@ -135,6 +159,7 @@ Hamburger
     align-items: center;
     gap: 0.3rem;
     background: transparent;
+    padding: 0 1.5rem;
     border: none;
     z-index: 1000;
     cursor: pointer;
@@ -146,6 +171,30 @@ Hamburger
     height: 0.5rem;
     border-radius: 50%;
 }
+
+.hamburger.active {
+    position: absolute;
+    top: -47%;
+}
+
+.hamburger.active .bar {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--text-col2);
+}
+
+.hamburger.active .bar:nth-of-type(2) {
+    display: none;
+}
+
+.hamburger.active .bar:first-of-type {
+    transform: rotate(45deg) translateY(0.4rem);
+}
+
+.hamburger.active .bar:last-of-type {
+    transform: rotate(-45deg) translateY(-0.4rem);
+}
+
 
 /*====
 Main
@@ -160,7 +209,7 @@ main#main {
 Desktop screen
 ============*/
 
-@media (min-width: 1024px) {
+@media (min-width: 765px) {
     .nav-bar {
     width: 95%;
     max-width: 1200px;
