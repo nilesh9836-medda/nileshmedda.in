@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nilesh Medda — Front-end developer building fast, responsive and conversion-focused websites for businesses and creators." />
+  <title>Nilesh Medda — Front-end Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Nilesh home">
+        <span class="brand-mark">N</span>
+        <span>Nilesh<span class="dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+        <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status"></span> Available for freelance projects</p>
+        <h1>I build websites<br><em>people remember.</em></h1>
+        <p class="hero-text">
+          Front-end developer focused on clean interfaces, responsive experiences
+          and websites that turn visitors into customers.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View my work <span>↗</span></a>
+          <a class="button button-ghost" href="#contact">Start a project</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>01</strong><span>Clean &amp; modern UI</span></div>
+          <div><strong>02</strong><span>Responsive by default</span></div>
+          <div><strong>03</strong><span>Vanilla JS &amp; web standards</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-card">
+          <div class="portrait-glow"></div>
+          <img src="assets/profile.png" alt="Portrait of Nilesh Medda" />
+          <div class="portrait-tag">
+            <span>FRONT-END</span>
+            <strong>DEVELOPER</strong>
+          </div>
+        </div>
+        <div class="floating-card card-top">HTML · CSS · JS</div>
+        <div class="floating-card card-bottom">Available worldwide <span>✦</span></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Skills">
+      <div class="marquee-track">
+        <span>WEB DESIGN</span><b>✦</b><span>FRONT-END DEVELOPMENT</span><b>✦</b>
+        <span>RESPONSIVE UI</span><b>✦</b><span>JAVASCRIPT</span><b>✦</b>
+        <span>WEB DESIGN</span><b>✦</b><span>FRONT-END DEVELOPMENT</span><b>✦</b>
+        <span>RESPONSIVE UI</span><b>✦</b><span>JAVASCRIPT</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section container" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Built to look good.<br><em>Built to work.</em></h2>
+        </div>
+        <p class="section-intro">A growing collection of practical projects designed with real users, performance and maintainability in mind.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project project-featured">
+          <div class="project-visual landing">
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>yourbrand.com</span></div>
+              <div class="mock-landing">
+                <small>NEW COLLECTION</small>
+                <strong>Make your<br>product impossible<br>to ignore.</strong>
+                <div class="mock-button"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-number">01</span>
+              <h3>Product Landing Page</h3>
+              <p>Conversion-focused landing page with responsive layouts, clear hierarchy and subtle interactions.</p>
+            </div>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual dashboard">
+            <div class="mini-window">
+              <div class="mini-sidebar"></div>
+              <div class="mini-content"><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-number">02</span>
+              <h3>Personal Portfolio</h3>
+              <p>A minimal personal brand website built to communicate skills without the noise.</p>
+            </div>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual reader">
+            <div class="reader-card">
+              <span>UMBRAMANHWA</span>
+              <strong>Read.<br>Discover.<br>Repeat.</strong>
+              <small>CHAPTER 037</small>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-number">03</span>
+              <h3>UmbraManhwa</h3>
+              <p>A content-reading interface with dynamic chapter and image loading.</p>
+            </div>
+            <div class="tags"><span>JavaScript</span><span>JSON</span><span>UI</span></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual task">
+            <div class="task-window">
+              <small>TODAY</small>
+              <h4>My tasks</h4>
+              <div>✓ Finish portfolio</div><div>○ Review JavaScript</div><div>○ Ship client project</div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <span class="project-number">04</span>
+              <h3>Todo App</h3>
+              <p>A lightweight task manager demonstrating DOM manipulation and local data handling.</p>
+            </div>
+            <div class="tags"><span>JavaScript</span><span>DOM</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">What I do</p>
+            <h2>From blank canvas<br>to <em>launch day.</em></h2>
+          </div>
+          <p class="section-intro">You bring the business goal. I turn it into a polished web experience that works across phones, tablets and desktops.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service">
+            <span class="service-icon">01</span>
+            <h3>Landing Pages</h3>
+            <p>High-impact pages for products, services, campaigns and small businesses.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service">
+            <span class="service-icon">02</span>
+            <h3>Business Websites</h3>
+            <p>Professional websites that make your brand look credible and easy to trust.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service">
+            <span class="service-icon">03</span>
+            <h3>UI Development</h3>
+            <p>Pixel-conscious implementation from Figma, screenshots or your design brief.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+          <article class="service">
+            <span class="service-icon">04</span>
+            <h3>Website Improvements</h3>
+            <p>Responsive fixes, UI polish, performance-minded cleanup and JavaScript features.</p>
+            <span class="service-arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about container" id="about">
+      <div class="about-number">03<span>/05</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">A little about me</p>
+        <h2>Developer mindset.<br><em>Designer attention.</em></h2>
+        <p>
+          I'm Nilesh, a front-end developer with an engineering background and a
+          strong interest in building things from scratch. I enjoy taking a rough
+          idea and turning it into a fast, understandable and polished interface.
+        </p>
+        <p>
+          My current stack is intentionally fundamentals-first: semantic HTML,
+          modern CSS and JavaScript. That gives me a strong base to build reliable
+          interfaces before adding heavier tooling.
+        </p>
+        <a href="#contact" class="text-link">Have a project in mind? Let's talk ↗</a>
+      </div>
+      <div class="about-stack">
+        <div><span>HTML5</span><b>●</b></div>
+        <div><span>CSS3</span><b>●</b></div>
+        <div><span>JavaScript</span><b>●</b></div>
+        <div><span>Responsive UI</span><b>●</b></div>
+        <div><span>Git / GitHub</span><b>●</b></div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2>Simple process.<br><em>No mystery.</em></h2>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process-step"><span>01</span><h3>Discover</h3><p>We define the audience, goal, content and scope before writing code.</p></div>
+          <div class="process-step"><span>02</span><h3>Design</h3><p>I establish layout, visual hierarchy and responsive behavior around your brand.</p></div>
+          <div class="process-step"><span>03</span><h3>Build</h3><p>Clean semantic code, responsive CSS and JavaScript where it genuinely adds value.</p></div>
+          <div class="process-step"><span>04</span><h3>Launch</h3><p>Final QA, device checks and deployment-ready files so your site is ready to go.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <div class="contact-inner">
+        <div>
+          <p class="eyebrow">Start a project</p>
+          <h2>Have an idea?<br><em>Let's build it.</em></h2>
+          <p class="contact-copy">Tell me what you're building, what you need and when you want it. I'll get back to you with the next steps.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary big" href="mailto:contact.nileshmedda.dev@gmail.com">contact.nileshmedda.dev@gmail.com <span>↗</span></a>
+          <div class="socials">
+            <a href="https://github.com/nilesh9836-medda" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="www.linkedin.com/in/nileshmedda" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://nileshmedda.in/" target="_blank" rel="noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year"></span> Nilesh Medda</span>
+    <span>Designed &amp; built with HTML, CSS &amp; JavaScript.</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
