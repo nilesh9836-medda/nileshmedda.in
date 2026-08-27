@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Nilesh Medda — Front-end developer building fast, responsive and conversion-focused websites for businesses and creators." />
   <title>Nilesh Medda — Front-end Developer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/images/my-logo2.png" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/images/profile.png" as="image" fetchpriority="high">
+  
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/public/icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/public/icon/favicon-16x16.png">
-  <link rel="manifest" href="/public/icon/site.webmanifest">
+
+  <!--FAVICON ICONS-->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/iconsfavicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
 </head>
 <body>
   <div class="noise"></div>
@@ -21,7 +27,9 @@
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="Nilesh home">
-        <span class="brand-mark">N</span>
+        <div class="brand-mark">
+          <img src="/assets/images/my-logo2.png" alt="logo" srcset="" onerror="this.style.display='none'">
+        </div>
         <span>Nilesh<span class="dot">.</span></span>
       </a>
 
@@ -63,7 +71,7 @@
       <div class="hero-visual">
         <div class="portrait-card">
           <div class="portrait-glow"></div>
-          <img src="/assets/images/profile.svg" alt="Portrait of Nilesh Medda" />
+          <img src="/assets/images/profile.png" alt="Portrait of Nilesh Medda" />
           <div class="portrait-tag">
             <span>FRONT-END</span>
             <strong>DEVELOPER</strong>
