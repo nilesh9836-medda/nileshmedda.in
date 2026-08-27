@@ -22,8 +22,6 @@ themeToggle?.addEventListener("click", () => {
   );
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
-
 
 //Using fetch() keeps users on your business card page instead of redirecting them to Formspree’s thank-you page
 const orderForm = document.getElementById("orderForm");
@@ -72,5 +70,20 @@ if (orderForm) {
       submitBtn.disabled = false;
       submitBtn.innerHTML = `<i class="fa-solid fa-paper-plane"></i> Send Order Request`;
     }
+  });
+}
+
+
+// Auto-update copyright year
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+// Smooth back-to-top scrolling
+const backToTopBtn = document.getElementById('backToTop');
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 }
