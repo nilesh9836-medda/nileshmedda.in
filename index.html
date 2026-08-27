@@ -355,8 +355,40 @@
         </a>
       </div>
 
+      <!-- Privacy Policy Modal -->
+      <dialog id="privacyModal" class="legal-modal">
+        <div class="modal-content">
+          <h3>Privacy Policy</h3>
+          <p>Last updated: August 2026</p>
+          <ul>
+            <li><strong>Data Collection:</strong> I collect information you explicitly provide through the order form (Name, Email, Project Details) strictly to respond to your inquiry and discuss project scopes.</li>
+            <li><strong>Analytics:</strong> This website uses Cloudflare Web Analytics, a privacy-first tool that does <em>not</em> use cookies or collect personal identifying data.</li>
+            <li><strong>Data Sharing:</strong> Your information is never sold, rented, or shared with third parties, except as processed by Formspree to deliver your form message to my email inbox.</li>
+          </ul>
+          <button onclick="document.getElementById('privacyModal').close()" class="close-btn">Close</button>
+        </div>
+      </dialog>
+
+      <!-- Terms of Service Modal -->
+      <dialog id="termsModal" class="legal-modal">
+        <div class="modal-content">
+          <h3>Terms of Service</h3>
+          <p>Last updated: August 2026</p>
+          <ul>
+            <li><strong>Services:</strong> Work requested via this website is subject to a formal agreement or quote signed before project kickoff.</li>
+            <li><strong>Intellectual Property:</strong> All original code and assets created for client projects belong to the client upon full payment, unless specified otherwise.</li>
+            <li><strong>Website Use:</strong> You may not use this website for unauthorized vulnerability scanning, spamming form submissions, or malicious activities.</li>
+          </ul>
+          <button onclick="document.getElementById('termsModal').close()" class="close-btn">Close</button>
+        </div>
+      </dialog>
+
       <!-- Meta Info & Copyright -->
       <div class="footer-bottom">
+        <div class="footer-legal">
+          <a href="#privacyModal" id="openPrivacy">Privacy Policy</a> • 
+          <a href="#termsModal" id="openTerms">Terms of Service</a>
+        </div>
         <p class="copyright">
           &copy; <span id="currentYear"></span> Nilesh Medda. All rights reserved.
         </p>

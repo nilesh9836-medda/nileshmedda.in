@@ -282,6 +282,36 @@ h1 em, h2 em { color: var(--accent); font-style: normal; }
     color: #f87171;
     border: 1px solid rgba(239, 68, 68, 0.3);
   }
+  
+
+
+  .legal-modal {
+  border: 1px solid var(--border-color, #222938);
+  border-radius: 12px;
+  background: var(--card-bg, #12161f);
+  color: var(--text-main, #f3f4f6);
+  max-width: 500px;
+  padding: 20px;
+}
+
+.legal-modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.legal-modal h3 { margin-top: 0; }
+.legal-modal ul { padding-left: 20px; font-size: 0.85rem; line-height: 1.5; }
+.legal-modal li { margin-bottom: 8px; }
+
+.close-btn {
+  background: var(--border-color, #222938);
+  color: var(--text-main, #f3f4f6);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
 
 
 

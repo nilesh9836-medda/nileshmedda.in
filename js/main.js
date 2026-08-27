@@ -74,6 +74,17 @@ if (orderForm) {
 }
 
 
+document.getElementById('openPrivacy').addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('privacyModal').showModal();
+});
+
+document.getElementById('openTerms').addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('termsModal').showModal();
+});
+
+
 // Auto-update copyright year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
