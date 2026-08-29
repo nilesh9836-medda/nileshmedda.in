@@ -1,4 +1,6 @@
-# Nilesh Medda
+![Screenshot of nileshmedda.in homepage](/assets/images/Screenshot-Nilesh-Web%20Developer.png)
+
+# Nilesh .
 
 Welcome to the source code of my personal portfolio website.
 
@@ -6,7 +8,7 @@ This website showcases my projects, technical skills, and journey as a Full Stac
 
 ## 🌐 Website
 
-https://nileshmedda.in
+[https://nileshmedda.in](https://nileshmedda.in)
 
 ---
 
@@ -27,54 +29,81 @@ https://nileshmedda.in
 - Smooth Animations
 - Project Showcase
 - Contact Section
-- Resume
 - Dark Mode (Planned)
 
 ---
 
 ## 📂 Project Structure
 
-```
-assets/
-    css/
-    js/
-    images/
-    icons/
-
-components/
-
-projects/
-
-resume/
-
-index.html
+```text
+.
+├── assets
+│   ├── icons
+│   │   ├── android-chrome-192x192.png
+│   │   ├── android-chrome-512x512.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon.ico
+│   │   └── site.webmanifest
+│   └── images
+│       ├── bg3-flip.png
+│       ├── bg3.webp
+│       ├── busineass-card-page.jpeg
+│       ├── business-website.png
+│       ├── my-logo2.png
+│       ├── my-logo.png
+│       ├── portfolio-page.jpeg
+│       ├── product-landing-page.png
+│       ├── profile.png
+│       ├── profile.webp
+│       ├── restuarant-website.png
+│       └── Screenshot-Nilesh-Web Developer.png
+├── css
+│   ├── card.css
+│   └── style.css
+├── index.html
+├── js
+│   ├── card.js
+│   └── main.js
+├── LICENSE
+├── page
+│   └── business-card.html
+└── README.md
 ```
 
 ---
 
 ## 📌 Roadmap
 
-- [ ] Portfolio Homepage
+- [x] Website Homepage
 - [ ] Projects Page
-- [ ] Contact Form
+- [x] Contact Form
 - [ ] Blog
 - [ ] React + Tailwind Version
 
 ---
 
-## 📬 Contact
+## 📄 License
 
-Email: contact.nileshmedda.dev@gmail.com
+This project is licensed under the MIT License.
 
-GitHub:
-https://github.com/nilesh9836-medda
-
-LinkedIn:
-https://linkedin.com/in/nileshmedda
-
-Website:
-https://nileshmedda.in
+See the LICENSE file for more information.
 
 ---
 
-© 2026 Nilesh Medda
+## 👨‍💻 Author
+
+Nilesh Medda
+
+Freelance Web Developer
+
+🌐 Website: [www.nileshmedda.in](https://nileshmedda.in)
+
+📧 Email: [contact.nileshmedda.dev@gmail.com](mailto:contact.nileshmedda.dev@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub.
