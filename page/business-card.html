@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilesh Medda - Digital Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/images/bg3.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="/assets/images/my-logo2.png" as="image" fetchpriority="high">
+  <link rel="preload" href="/assets/images/profile.png" as="image" fetchpriority="high">
+
+  <link rel="stylesheet" href="/css/card.css">
+  <style>
+    .print-out { display: none;}
+    @media print { 
+      body { background: white;}
+      .digital { display: none;}
+      .print-out { display: block;}
+    }
+  </style>
+
+  <!--FAVICON ICONS-->
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/iconsfavicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+</head>
+<body class="body">
+
+  <div class="overlay" onclick="overlayClose()"></div>
+
+  <div class="card digital">
+
+    <div class="header">
+      <nav class="nav">
+        <span class="share" onclick="shareCard()">Share<i class="fa-solid fa-share-nodes"></i></span>
+        <span class="print" onclick="window.print()" aria-label="Click button to print">Print<i class="fa-solid fa-print"></i></span>
+      </nav>
+
+      <button class="hamburger" type="button" onclick="hamburgerActive()">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </button>
+
+      <div class="brand">
+        <img src="/assets/images/my-logo2.png" alt="logo" srcset="" onerror="this.style.display='none'" class="brand-logo" height="34px" width="34px">
+        <div class="brand-name">Nilesh <span>.</span></div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="profile">
+        <img src="/assets/images/profile.webp" class="avatar" alt="profile" height="120px" width="120px">
+        <button type="button" class="qr-btn" onclick="lightboxActive()"><i class="fa-sharp fa-solid fa-qrcode"></i></button>
+      </div>
+      <p class="name"><span>Nilesh</span> Medda</p>
+      <div class="occupation">Freelance Web Developer</div>
+      <p class="work">I build <span>modern, responsive and user-friendly websites</span> that help businesses and professionals grow online.</p>
+    </div>
+
+    <div class="contact-actions digital-opt">
+      <a href="https://wa.me/9163409838" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Message Nilesh on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:contact.nileshmedda.dev@gmail.com" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Send Nilesh Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="www.linkedin.com/in/nileshmedda" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Follow Nilesh on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/1Bj3gqun1Y/" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Follow Nilesh on Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/nilesh.webdev/" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Follow Nilesh on Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/nilesh9836-medda" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Follow Nilesh on Github"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <div class="info-list">
+      <p><i class="fa-solid fa-phone"></i><a href="tel:+919163409838" target="_blank" rel="noopener noreferrer" aria-label="Call Nilesh">+91 9163409838</a></p>
+      <p class="print-opt"><i class="fa-solid fa-envelope"></i>contact.nileshmedda.dev@gmail.com</p>
+      <p><i class="fa-solid fa-location-dot"></i><a href="https://maps.google.com/?q=howrah" target="_blank" rel="noopener noreferrer" aria-label="Check location on Google Map">Howrah, West Bengal, India</a></p>
+      <p><i class="fa-solid fa-globe"></i><a href="https://nileshmedda.in" target="_blank" rel="noopener noreferrer" aria-label="Tap to open business website">www.nileshmedda.in</a></p>
+    </div>
+
+    <div class="action-btns">
+      <!--<button type="button" class="print" onclick="" aria-label="Click button to print">Print<i class="fa-solid fa-print" style="color: rgb(0,0,0);"></i></button>-->
+      
+      <button type="button" class="save" onclick="downloadVCard()"  aria-label="Click button to save contact">Save Contact</button>
+    </div>
+
+    <footer class="footer">
+      <div class="social"></div>
+      <p class="copyright">&copy2026 Nilesh Medda · All rights reserved.</p>
+    </footer>
+  </div>
+
+  <div class="lightbox">
+    <div class="qr-section">
+      <img id="qrImage" alt="QR Code">
+    </div>
+  </div>
+
+  <div class="print-out">
+    <div class="card-front">
+      <img src="/assets/images/bg3-flip.png" alt="background image of front card" class="bg-img">
+      <div class="container">
+        <img src="/assets/images/my-logo2.png" alt="logo" class="print-logo" width="80px" height="80px">
+      </div>
+      <p class="print-website">www.nileshmedda.in</p>
+    </div>
+
+    <div class="card-rear">
+      <div class="print-profile">
+        <div class="print-name"><span>Nilesh</span> Medda</div>
+        <div class="print-occup">Freelance Web Developer</div>
+        <div class="print-work">I build modern, responsive and user-friendly websites that help businesses and professionals grow online.</div>
+      </div>
+
+      <div class="print-avatar">
+        <img src="/assets/images/profile.webp" alt="profile" height="70px" width="70px">
+      </div>
+
+      <div class="print-contact">
+        <p><i class="fa-solid fa-phone"></i>+91 9163409838</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> +91 9163409838</p>
+        <p><i class="fa-solid fa-envelope"></i>contact.nileshmedda.dev@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i>Howrah, West Bengal, India</a></p>
+      </div>
+
+      <div class="print-qr">
+        <img id="print-qr-img" alt="QR code" width="65px" height="65px">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/js/card.js"></script>
+</body>
+</html>
