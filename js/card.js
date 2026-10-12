@@ -6,7 +6,7 @@ const clientData = {
   email: "contact.nileshmedda.dev@gmail.com",
   website: window.location.href,
   address: "Howrah, West Bengal, India",
-  logoUrl: "https://digital-vcard-v2.netlify.app/assets/images/my-logo2.png" // <-- ADD YOUR LOGO HERE
+  logoUrl: "https://nileshmedda.in/assets/images/my-logo2.png" // <-- ADD YOUR LOGO HERE
 };
 
 function hamburgerActive() {
